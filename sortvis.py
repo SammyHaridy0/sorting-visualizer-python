@@ -12,6 +12,11 @@ class BubbleSortVisualizer:
         self.spacing = 600 // num_rectangles
         self.draw_rectangles()
 
+        self.sort_button = tk.Button(root, text="Start Sorting", command=self.bubble_sort)
+        self.sort_button.pack()
+        self.root.update()
+        
+
     def draw_rectangles(self):
         for i in range(self.num_rectangles):
             x1 = i * self.spacing
@@ -45,8 +50,6 @@ class BubbleSortVisualizer:
 
 # Usage
 root = tk.Tk()
-root.title("Bubble Sort Visualization")
-root.geometry("600x400")
+root.title("Sort Visualization")
 app = BubbleSortVisualizer(root)
-app.start_sorting()
 root.mainloop()
