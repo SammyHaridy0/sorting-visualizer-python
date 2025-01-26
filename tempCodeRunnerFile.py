@@ -1,1 +1,1 @@
-root.geometry("600x400")
+            # self.rectangles[rect] = text
